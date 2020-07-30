@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Activity_background"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    ><!--
+    <com.diegodobelo.expandingview.ExpandingItem
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:item_layout="@layout/stock_assets"
+        app:indicator_size="42dp"
+        app:indicator_margin_left="16dp"
+        app:indicator_margin_right="16dp"
+        app:show_indicator="true"
+        app:show_animation="true"
+        app:start_collapsed="true"
+        app:animation_duration="250"/>-->
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/card_view_out_of_stcok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="OUT OF STOCK"
+        app:inner_view="@layout/stock_assets"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/card_view_low_in_stcok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="LOW IN STOCK"
+        app:inner_view="@layout/stock_assets"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/card_view_present_in_stcok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="IN STOCK"
+        app:inner_view="@layout/stock_assets"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
+
+</LinearLayout>
+</ScrollView>

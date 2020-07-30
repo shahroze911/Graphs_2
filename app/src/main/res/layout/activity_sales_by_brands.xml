@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MyWhite"
+    tools:context=".DataEntry.salesByBrands">
+
+    <EditText
+        android:id="@+id/fromTime"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="300dp"
+        android:ems="10"
+        android:hint="From"
+
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/toTime"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="300dp"
+        android:ems="10"
+        android:hint="TO"
+
+        android:inputType="time" />
+
+    <Spinner
+        android:id="@+id/spinnerBrands"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="540dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:dropDownWidth="fill_parent" />
+
+    <Button
+        android:id="@+id/btn_submit_today"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:width="95dp"
+        android:background="@drawable/buttons_round"
+        android:text="Submit"
+        android:textColor="@color/MyWhite" />
+
+    <Button
+        android:id="@+id/btn_fromDate_today"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="173dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_buttons"
+        android:text="Date"
+        android:textColor="@color/MyWhite" />
+
+    <Button
+        android:id="@+id/btn_cancel_today"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:width="95dp"
+        android:background="@drawable/buttons_round"
+        android:text="Go Back"
+        android:textColor="@color/MyWhite" />
+
+    <EditText
+        android:id="@+id/fromDate"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="170dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date" />
+
+
+
+    <EditText
+        android:id="@+id/inputQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="393dp"
+        android:hint="Enter Quantity" />
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="459dp"
+        android:hint="Enter Price " />
+
+
+</RelativeLayout>

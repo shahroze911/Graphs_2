@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Activity_background"
+    android:padding="10dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Selling Products"
+        android:textColor="@color/MyWhite"
+        android:textSize="20dp"
+        />
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/Carousel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/product"
+        >
+    </in.goodiebag.carouselpicker.CarouselPicker>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Sales"
+        android:textColor="@color/MyWhite"
+        android:textSize="20dp"
+        />
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_buttons"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="20dp"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_day_product"
+                android:text="Day"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_week_product"
+                android:text="Week"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_custom_product"
+                android:text="Custom"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/Bar_graph_product"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#0A1720"
+        >
+
+    </com.anychart.AnyChartView>
+<Button
+    android:layout_width="match_parent"
+    android:id="@+id/btnEnter"
+    android:text="Enter to Database"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>
+</ScrollView>

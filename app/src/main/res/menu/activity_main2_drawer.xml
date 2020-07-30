@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/ITEMS" android:checkableBehavior="single">
+        <item
+            android:id="@+id/salesAnalysis"
+            app:showAsAction="always"
+            android:title="Sales Analysis" >
+            <menu>
+                <item
+                    android:id="@+id/nav_Sales_brand"
+                    android:icon="@drawable/ic_baseline_branding_watermark_24"
+                    android:title="Sales by Brand" />
+                <item
+                    android:id="@+id/nav_Sales_Category"
+                    android:icon="@drawable/ic_baseline_category_24"
+                    android:title="Sales by Category" />
+                <item
+                    android:id="@+id/nav_Sales_date"
+                    android:icon="@drawable/ic_baseline_date_range_24"
+                    android:title="Sales by Date" />
+                <item
+                    android:id="@+id/nav_Sales_Product"
+                    android:icon="@drawable/ic_baseline_assignment_24"
+                    android:title="Sales by Product" />
+                <item
+                    android:id="@+id/nav_stock"
+                    android:icon="@drawable/ic_baseline_shopping_cart_24"
+                    android:title="Stock"
+                    />
+                <item
+                    android:id="@+id/nav_Sales_today"
+                    android:icon="@drawable/ic_baseline_show_chart_24"
+                    android:title="Total Sales Today"
+
+                    />
+
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:id="@+id/ITEMS0" android:checkableBehavior="single">
+        <item
+            android:id="@+id/insertItems"
+
+            android:title="Data Entry"
+            android:orderInCategory="2"
+            app:showAsAction="always">
+            >
+        <menu>
+            <item
+                android:id="@+id/brandSales"
+                android:icon="@drawable/ic_baseline_branding_watermark_24"
+                android:title="Sales by Brand" />
+        </menu>
+        </item>
+    </group>
+    <group android:id="@+id/ITEMS01" android:checkableBehavior="single">
+        <item
+            android:id="@+id/displayItems"
+            android:title="Display Sales"
+            android:orderInCategory="1"
+
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/viewBrandSales"
+                    android:title="View Sales"
+                    android:icon="@drawable/ic_baseline_branding_watermark_24"
+                    />
+
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Activity_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:textColor="@color/MyWhite"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:textColor="@color/MyWhite"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_weight="1"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="@color/Graph_text_color_sales_today"
+                app:progressBackgroundStrokeWidth="15dp"
+                app:progressStrokeWidth="15dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="15dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                app:gradientType="linear"
+                app:gradientEndColor="#444F8F"
+                />
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="70dp"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="#C18C53"
+                app:progressBackgroundStrokeWidth="15dp"
+                app:progressStrokeWidth="15dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="15dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                app:gradientType="linear"
+                app:gradientEndColor="#9F3A28"
+                />
+
+
+
+        </LinearLayout>
+        <!--
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                >
+
+
+            </LinearLayout>-->
+        <LinearLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_buttons"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/round_buttons"
+                android:layout_marginLeft="20dp"
+                >
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_day_brand"
+                    android:text="Day"
+                    android:textColor="@color/MyWhite"
+                    android:background="@drawable/buttons_round"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="95dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_week_brand"
+                    android:text="Week"
+                    android:textColor="@color/MyWhite"
+                    android:background="@drawable/buttons_round"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="95dp"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_custom_brand"
+                    android:text="Custom"
+                    android:textColor="@color/MyWhite"
+                    android:background="@drawable/buttons_round"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:width="95dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.anychart.AnyChartView
+            android:id="@+id/Area_graph_brand"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#0A1720"
+            >
+
+        </com.anychart.AnyChartView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_MI"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="#1DC366"
+                app:progressBackgroundStrokeWidth="5dp"
+                app:progressStrokeWidth="5dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="10dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                />
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_Vivo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="#1855FF"
+                app:progressBackgroundStrokeWidth="5dp"
+                app:progressStrokeWidth="5dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="10dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                />
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_Nokia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="#FDB043"
+                app:progressBackgroundStrokeWidth="5dp"
+                app:progressStrokeWidth="5dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="10dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                />
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress_brand_QMobile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                app:progressBackgroundColor="@color/MyWhite"
+                app:progressColor="#F75A05"
+                app:progressBackgroundStrokeWidth="5dp"
+                app:progressStrokeWidth="5dp"
+                app:textColor="@color/MyWhite"
+                app:textSize="10dp"
+                app:direction="clockwise"
+                app:startAngle="270"
+                app:progressCap="round"
+                app:enableProgressAnimation="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="MI"
+                android:gravity="center"
+                android:textColor="@color/MyWhite" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vivo"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/MyWhite" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nokia"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/MyWhite" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Q Mobile"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/MyWhite" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_brand_1"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70% achieved"
+                android:textColor="@color/MyWhite"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_brand_2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60% achieved"
+                android:textColor="@color/MyWhite"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_brand_3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40% achieved"
+                android:textColor="@color/MyWhite"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_brand_4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="20% achieved"
+                android:textColor="@color/MyWhite"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

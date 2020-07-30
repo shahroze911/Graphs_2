@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/btn_fromDate_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Date"
+            android:background="@drawable/round_buttons"
+            android:textColor="@color/MyWhite"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txt_view_from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="from selected date"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_toDate_today"
+            android:background="@drawable/round_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Date"
+            android:layout_weight="1"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:id="@+id/txt_view_todate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To selected date"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_buttons"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="20dp"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel_today"
+                android:text="Cancel"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_submit_today"
+                android:text="Submit"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

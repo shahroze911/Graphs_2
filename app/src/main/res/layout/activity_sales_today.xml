@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Activity_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+        <TextView
+            android:id="@+id/txt_previous_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MyWhite"
+            android:text="Previous Day"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/txt_current_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MyWhite"
+            android:layout_marginLeft="10dp"
+            android:text="Current Day"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+    <TextView
+        android:id="@+id/txt_previous_day"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="103K"
+            android:textColor="#6ECDDE"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR"
+        android:textColor="#6ECDDE"
+        android:layout_marginLeft="6dp"
+        />
+    <TextView
+        android:id="@+id/txt_current_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="103K"
+        android:layout_marginLeft="70dp"
+        android:textColor="#C18C53"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR"
+        android:textColor="#C18C53"
+        android:layout_marginLeft="6dp"
+        />
+
+</LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        >
+
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_buttons"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="20dp"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_day"
+                android:text="Day"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_week"
+                android:text="Week"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_custom"
+                android:text="Custom"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/Area_graph_today"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#0A1720"
+        >
+
+    </com.anychart.AnyChartView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/yellow_star"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/heart"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/city"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        >
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TOP SELLING &#160;&#160;&#160;&#160;BRAND"
+            android:textColor="#BBAC65" />
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BEST SELLING &#160;&#160;&#160;&#160;PRODUCT"
+            android:textColor="#D75A4D" />
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="22dp"
+            android:text="&#160;&#160;BEST \nSALES"
+            android:textColor="#32A4A6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SamsungJ7"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="125-Gulberg"
+            android:textColor="@color/MyWhite"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100K&#160;&#160;PKR"
+            android:textSize="10dp"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Lahore&#160;&#160;"
+            android:textSize="10dp"
+            android:textColor="@color/MyWhite"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

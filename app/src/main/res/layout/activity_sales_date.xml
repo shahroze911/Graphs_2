@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_buttons"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="3dp"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_day_intDate"
+                android:text="Day"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_week_intDate"
+                android:text="Week"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_custom_intDate"
+                android:text="Custom"
+                android:textColor="@color/MyWhite"
+                android:background="@drawable/buttons_round"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:width="95dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/Line_graph_today_InDate"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#0A1720"
+        >
+    </com.anychart.AnyChartView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/grosssale"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ave"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/totalorders"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="&#160;&#160;GROSS \n &#160;SALES"
+            android:textColor="#BBAC65" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AVERGAE GROSS \n&#160;&#160;&#160;DAILY SALES"
+            android:textColor="#D75A4D" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="&#160;&#160;TOTAL \n ORDERS"
+            android:textColor="#32A4A6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="700K &#160;PKR"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300K &#160;PKR"
+            android:textColor="@color/MyWhite"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="800K &#160;PKR"
+            android:textColor="@color/MyWhite"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

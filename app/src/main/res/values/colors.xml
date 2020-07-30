@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A8276</color>
+    <color name="colorPrimaryDark">#0A1720</color>
+    <color name="colorAccent">#F52D76</color>
+    <color name="background">#201C2B</color>
+    <color name="back">#1B1B24</color>
+    <color name="MyWhite">#F1F1F1</color>
+    <color name="Naviagation_header_background">#2B414F</color>
+    <color name="Item_Colors">#B2C490</color>
+    <color name="Menu_item_background">#264152</color>
+    <color name="toolBar_background">#112432</color>
+    <color name="Activity_background">#0A1720</color>
+    <color name="Graph_text_color_sales_today">#6ECDDE</color>
+    <color name="Toogle_color">#B6777A</color>
+    <color name="Product_Color_Carousel">#D78966</color>
+    <color name="Stcok_Items_Color">#274358</color>
+
+
+
+
+
+
+</resources>
